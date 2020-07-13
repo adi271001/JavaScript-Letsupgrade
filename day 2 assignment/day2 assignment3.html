@@ -1,0 +1,13 @@
+html>
+    <head>
+        <h2>Display Current Date</h2>
+        <body>
+            <p id="p1"></p>
+            <script>
+                var today = new Date();
+                var date = today.getDate()+'-'+(today.getMonth()+1)+'-'+today.getFullYear();
+                document.getElementById("p1").innerHTML = date;
+            </script>
+        </body>
+    </head>
+</html>
