@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+<script>
+//<p>The search() method searches a string for a specified value and returns the position of the match: </p> 
+var str = "Please locate where 'locate' occurs!";
+var pos = str.search("locate");
+console.log(pos)
+// slice() extracts a part of a string and returns the extracted part in a new string.The method takes 2 parameters: the start position, and the end position (end not included). </p>
+var str = "avacado, litchi, Kiwi";
+var res = str.slice(7, 13);
+console.log(res)
+//<p> If you omit the second parameter, the method will slice out the rest of the string </p>
+var res = str.slice(7);
+console.log(res)
+//<p> counting from the end: </p>
+var res = str.slice(-12);
+//<p> substring() is similar to slice().The difference is that substring() cannot accept negative indexes. </p>
+var str = "Apple, titan, zoop";
+var res = str.substring(7, 13);
+console.log(res)
+//<p> substr() is similar to slice().The difference is that the second parameter specifies the length of the extracted part. </p>
+var str = "Apple, oppo, realme";
+var res = str.substr(7, 6);
+console.log(res)
+//<p> The trim() method removes whitespace from both sides of a string: </p>
+var str = "       welcome to letsupgrade!        ";
+alert(str.trim());
+console.log(str)
+//<p> Array keys() </p>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+var fk = fruits.keys();
+for (x of fk) 
+{
+  console.log("demo"+x+"<br>")
+}
+//<p> Array sort() </p>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.sort();
+console.log(fruits)
+//<p> Array splice() </p>
+var cars = ["Bugatti", "nissan", "ford", "lamborghini"];
+cars.splice(2, 0, "ferrari", "aston martin");
+console.log(cars)
+//<p>v alueOf() </p>
+var washingmachine = ["Bosch", "whirlpool", "samsung", "lg"];
+var v = washingmachine.valueOf();
+console.log(v)
+</script>
+</head>
+<body>
+    methods of Array 
+</body>
+</html>
