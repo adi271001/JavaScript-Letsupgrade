@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+    <head>
+        <title>Data types in Javascript</title>
+    </head>    
+        <body>
+            There are six data types in Javascript which is divided into three main categories:
+            <br/>
+            - Primitive (Primary) which are String, Number, and Boolean
+            <br/>
+            - Composite (Reference) which are Object, Array, and Function
+            <br/>
+            - Special data types which are Undefined and Null 
+            <br/>
+            1. Strings
+            <br/>
+            The string data type is used to represent textual data Strings are created using single or double quotes surrounding one or more characters
+            <br/>
+            eg:
+                var b = 'He said "sayonara" and left for his 2 month expedition.';
+                o/p He said "sayonara" and left for his 2 month expedition.
+            <br/>
+            2. Number
+            <br/>
+            The number data type is used to represent positive or negative numbers with or without decimal place, or numbers written using exponential notation
+            <br/>
+            eg:
+                var a = 264; 
+                o/p 264
+            <br/>
+            3.Boolean
+            <br/>
+            The Boolean data type can hold only two values: true or false.
+            <br/>
+            eg:
+                var isReading = true;
+                o/p true
+            <br/>
+            4. Object 
+            <br/>
+            The object is a complex data type that allows you to store collections of data
+            <br/>
+            eg :
+                var person = {"name": "jacques", "surname": "Kallis", "age": "44"}
+            <br/>
+            5. Array
+            <br/>
+            An array is a type of object used for storing multiple values in single variable. Uses [ ]
+            <br/>
+            eg: 
+                [1, 2 ,3,52,14]
+            <br/>
+            6. Functions
+            <br/>
+            The function is callable object that executes a block of code. Since functions are objects, so it is possible to assign them to variables
+            <br/>
+            eg:
+                var greeting = function(){ 
+                    return "have a good day sir/madam"; 
+                }
+                alert(typeof greeting) // Output: function
+                alert(greeting()); // Output: Have a good day sir/madam 
+            7. Undefined
+            <br/>
+            The undefined data type can only have one value-the special value undefined. If a variable has been declared, but has not been assigned a value, has the value undefined.
+            <br/>
+            eg:
+                var t;
+                alert(t) // Output: undefined
+            <br/>
+            8. Null
+            <br/>
+            This is another special data type that can have only one value-the null value. A null value means that there is no value. It is not equivalent to an empty string ("") or 0, it is simply nothing.
+            <br/>
+            eg:
+                b = null;
+                alert(b) // Output: null
+        </body>
+</html>
