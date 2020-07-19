@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head>
+   <h1>Question 8:Replace Function Expressions with arrow functions in the code below:</h1>
+</head>
+<script>
+    console.log("Arrow function");
+function ask(question, yes, no) {
+    if (confirm(question)) yes()
+    else no();
+  }
+  
+  ask(
+    "Do you agree?",
+    () => alert("You agreed."),
+    () => alert("You cancelled the execution.")
+  );
+</script>
+</html>
