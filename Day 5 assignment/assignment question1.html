@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <h1>Write a program which does the following things:
+        1. Takes a positive number from the user.
+        2. Makes an array of numbers till the number given by user
+        3. Use higher order function to filter the odd numbers
+        4. Generate and array of the cubes of the filtered numbers</h1>
+</head>
+<script>
+    var n 
+    n = prompt("enter  a positive no");
+    if(n>0)
+    {
+        console.log(n);
+    }
+    else
+    {
+        console.log("plzz enter positive no")
+    }
+  let arr = [];
+  for(let i = 0; i <= n; i++)
+   {
+     arr.push(i);
+   }
+   let arr1=arr.filter((n)=>n%2!==0).map((n)=>n**3)
+   console.log(arr1);
+</script>
+</html>

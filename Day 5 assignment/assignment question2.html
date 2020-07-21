@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<head>
+    <h1>Question 2:
+        Create a Class User with properties as name, age & email.
+        He can login and logout
+        Create another class Moderator which has all the features of User, plus additional functionality to Add
+        coins and remove coins.
+        Create one more class Admin which has all the features of Moderator plus additional features like add a
+        Course and delete a particular course for a User/h1>
+</head>
+<script>
+    class User{
+      constructor(name, age, email){
+            this.name = name;
+            this.age = age;
+            this.email = email;
+            this.lucoins = 0;
+            this.courses = [];
+      }
+
+      login(){
+            console.log(`${this.name} has logged in`);
+            return this;
+      }
+      logout(){
+            console.log(`${this.name} has logged out`);
+            return this;
+      }
+}
+
+class Moderator extends User{
+      addCoins(user, lucoins){
+            this.lucoins++;
+            console.log(`${this.name} has ${this.lucoins} coins`);
+            return this;
+      }
+      removeCoins(user, lucoins){
+            this.lucoins--;
+            console.log(`${this.name} has ${this.lucoins} coins`);
+            return this;
+      }
+}
+
+class Admin extends Moderator{
+      addcourse(user,course){
+            user.courses.push(course);
+            console.log(user);
+      }
+      removecourse(user,course){
+            user.courses.pop(course);
+            console.log(user);
+      }
+
+}
+
+
+let user1 = new User('carl hooper',19,'teddy@gmail.com')
+let user2 = new User('Adi',20,'adi@gmail.com')
+let mod = new Moderator('shoaib sheikh',29,'berli@gmail.com')
+let admin = new Admin('Sai sondarkar',32,'siri@gmail.com')
+let users = [user1, user2,mod,admin];
+
+users.forEach(element => {
+      console.log(element);
+});
+
+user2.login()
+user1.logout()
+mod.addCoins(user1,5);
+mod.addCoins(user1,2);
+mod.removeCoins(user2, 1);
+admin.addcourse(user1,'Javascript, Python, Blockcahin');
+admin.addcourse(user1,'AI-ML');
+admin.addcourse(user2,'Javascript, Python');
+admin.removecourse(user1, 'AI-ML');
+console.log(user1);
+console.log(user2);
+</script>
+</html>
